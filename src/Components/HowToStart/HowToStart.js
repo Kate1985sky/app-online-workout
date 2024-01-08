@@ -2,8 +2,8 @@ import { Row, Col, Container } from "react-bootstrap";
 
 export const HowToStart = () => {
     return (
-<Container>
-    <Row>
+<Container style={{ backgroundColor: "#7036BA" }}>
+    <Row className="mt-5">
         <Col>
         <h1 className="text-center">How to start</h1>
         <br />
