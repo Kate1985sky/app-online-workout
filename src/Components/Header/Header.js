@@ -1,25 +1,44 @@
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { Navigation } from "../Navigation/Navigation";
+import { Logo } from "../Logo/Logo";
+import styles from "./Header.module.css";
 
 export const Header = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>
+    <Row style={{ height: 500 }}>
+      <Col style={{ backgroundColor: "#7036BA" }}>
+        <Col lg={{ span: 7, offset: 5 }}>
+          <div className="mt-3 mb-5 p-2">
+            <Logo />
+          </div>
+          <h1 className="p-2" style={{ color: "white" }}>
             Online Workout
             <br />
             Personal Program
           </h1>
-          <p>
-            Start training online with your personal coach and become healthy
+          <p className="p-2" style={{ color: "white" }}>
+            Start training online with your personal coach
+            <br />
+            and become healthy
           </p>
-          <button>Start Training</button>
+          <button
+            className="rounded-5"
+            style={{
+              backgroundColor: "#00BFB4",
+              color: "white",
+              width: 261,
+              height: 65,
+              border: "none",
+              fontSize: 25,
+            }}
+          >
+            Start Training
+          </button>
         </Col>
-        <Col>
-          <Navigation />
-        </Col>
-      </Row>
-    </Container>
+      </Col>
+      <Col className={styles.font}>
+        <Navigation />
+      </Col>
+    </Row>
   );
 };

@@ -10,22 +10,22 @@ export const Navigation = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav direction="horizontal" gap={4}>
-            <Nav.Link as={NavLink} to="/about-us">
+            <Nav.Link style={{color: "white"}} as={NavLink} to="/about-us">
               About us
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/how to start">
+            <Nav.Link style={{color: "white"}} as={NavLink} to="/how to start">
               How To Start
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/feautures">
+            <Nav.Link style={{color: "white"}} as={NavLink} to="/feautures">
               Feautures
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/pricing">
+            <Nav.Link style={{color: "white"}} as={NavLink} to="/pricing">
               Pricing
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/feedback">
+            <Nav.Link style={{color: "white"}} as={NavLink} to="/feedback">
               Feedback
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/faq">
+            <Nav.Link style={{color: "white"}} as={NavLink} to="/faq">
               FAQ
             </Nav.Link>
           </Nav>
