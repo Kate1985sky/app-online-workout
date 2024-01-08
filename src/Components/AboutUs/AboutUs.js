@@ -5,7 +5,7 @@ export const AboutUs = () => {
     <Container>
       <Row className="mt-5">
         <Col>
-          <h1 className="text-center">About Us</h1>
+          <h1 className="text-center fw-bold">About Us</h1>
         </Col>
       </Row>
       <Row className="mt-5">
