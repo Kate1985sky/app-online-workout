@@ -11,7 +11,7 @@ export const Header = () => {
           <div className="mt-3 mb-5 p-2">
             <Logo />
           </div>
-          <h1 className="p-2" style={{ color: "white" }}>
+          <h1 className="p-2 fw-bold lh-sm" style={{ color: "white" }}>
             Online Workout
             <br />
             Personal Program

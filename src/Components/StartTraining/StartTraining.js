@@ -3,17 +3,16 @@ import { Container, Row, Col } from "react-bootstrap";
 export const StartTraining = () => {
   return (
     <Container>
-      <Row>
+      <Row className="mt-5">
         <Col>
-          <h1 className="text-center">Start Training</h1>
-          <p className="text-center">
+          <h1 className="text-center fw-bold mt-5">Start Training</h1>
+          <p className="text-center mt-4 fs-6 fw-lighter text-body">
             Leave your phone and we will send you a link to our special chat
             bot. No spam guarateed.
           </p>
         </Col>
       </Row>
-      <Row>
-        <Col>
+      
           <form className="dropdown-menu p-4">
             <div className="mb-3">
               <label for="exampleDropdownFormEmail2" className="form-label">
@@ -53,8 +52,7 @@ export const StartTraining = () => {
               Sign in
             </button>
           </form>
-        </Col>
-      </Row>
+       
     </Container>
   );
 };
