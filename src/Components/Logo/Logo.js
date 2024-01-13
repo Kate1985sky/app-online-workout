@@ -17,8 +17,9 @@ export const Logo = () => {
           fill="white"
         />
       </svg>
-      
+
       <svg
+        className="px-2"
         width="165"
         height="20"
         viewBox="0 0 165 20"

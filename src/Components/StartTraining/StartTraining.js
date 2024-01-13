@@ -12,28 +12,29 @@ export const StartTraining = () => {
           </p>
         </Col>
       </Row>
-      
-          <form className="dropdown-menu p-4">
+      <Row>
+        <Col lg={{ span: 4, offset: 4 }}>
+          <form className="p-4">
             <div className="mb-3">
               <label for="exampleDropdownFormEmail2" className="form-label">
-                Email address
+                Your Phone
               </label>
               <input
                 type="email"
                 className="form-control"
                 id="exampleDropdownFormEmail2"
-                placeholder="email@example.com"
+                placeholder="+1_"
               />
             </div>
             <div className="mb-3">
               <label for="exampleDropdownFormPassword2" className="form-label">
-                Password
+                Your Name
               </label>
               <input
                 type="password"
                 className="form-control"
                 id="exampleDropdownFormPassword2"
-                placeholder="Password"
+                placeholder="Your name"
               />
             </div>
             <div className="mb-3">
@@ -41,18 +42,30 @@ export const StartTraining = () => {
                 <input
                   type="checkbox"
                   className="form-check-input"
-                  id="dropdownCheck2"
+                  id="flexCheckChecked" checked
                 />
                 <label className="form-check-label" for="dropdownCheck2">
-                  Remember me
+                  I accept Terms of Service
                 </label>
               </div>
             </div>
-            <button type="submit" className="btn btn-primary">
-              Sign in
+            <button
+              type="submit"
+              className="rounded-5 mt-2 ms-4"
+              style={{
+                backgroundColor: "#00BFB4",
+                color: "white",
+                width: 261,
+                height: 65,
+                border: "none",
+                fontSize: 25,
+              }}
+            >
+              Start Training
             </button>
           </form>
-       
+        </Col>
+      </Row>
     </Container>
   );
 };
