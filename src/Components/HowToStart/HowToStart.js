@@ -25,7 +25,7 @@ export const HowToStart = () => {
   return (
     <div style={{ backgroundColor: "#7036BA", height: 400, color: "white" }}>
       <Row className="mt-5">
-        <Col>
+        <Col className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h1 className="mt-5 text-center fw-bold">How to start</h1>
           <br />
           <p className="text-center">
