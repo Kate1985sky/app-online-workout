@@ -5,8 +5,8 @@ import styles from "./Header.module.css";
 
 export const Header = () => {
   return (
-    <Row style={{ height: 500 }} className="flex-column-md-column">
-      <Col style={{ backgroundColor: "#7036BA" }}>
+    <Row style={{ minHeight: 500 }} className="flex-column-md-column">
+      <Col xs sm md="12" style={{ backgroundColor: "#7036BA" }}>
         <Col lg={{ span: 7, offset: 5 }} >
         <div className="mt-3 mb-5 p-2">
           <Logo />
@@ -36,7 +36,7 @@ export const Header = () => {
         </button>
       </Col>
       </Col>
-      <Col className={styles.font}>
+      <Col xs sm md="12" className={styles.font}>
         <Navigation />
       </Col>
     </Row>

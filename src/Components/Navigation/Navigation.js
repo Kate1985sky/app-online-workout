@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 export const Navigation = () => {
   return (
-    <Navbar expand="md">
+    <Navbar expand="lg">
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
             <Nav.Link style={{ color: "white" }} as={NavLink} to="/about-us">
