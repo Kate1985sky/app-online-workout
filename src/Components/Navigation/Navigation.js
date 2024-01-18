@@ -1,36 +1,39 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
-
 
 export const Navigation = () => {
   return (
-    
-      <Navbar collapseOnSelect expand="lg">
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav direction="horizontal" gap={4}>
-            <Nav.Link style={{color: "white"}} as={NavLink} to="/about-us">
+    <Navbar expand="lg">
+      <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav>
+            <Nav.Link style={{ color: "white" }} as={NavLink} to="/about-us">
               About us
             </Nav.Link>
-            <Nav.Link style={{color: "white"}} as={NavLink} to="/how to start">
+            <Nav.Link
+              style={{ color: "white" }}
+              as={NavLink}
+              to="/how to start"
+            >
               How To Start
             </Nav.Link>
-            <Nav.Link style={{color: "white"}} as={NavLink} to="/feautures">
+            <Nav.Link style={{ color: "white" }} as={NavLink} to="/feautures">
               Feautures
             </Nav.Link>
-            <Nav.Link style={{color: "white"}} as={NavLink} to="/pricing">
+            <Nav.Link style={{ color: "white" }} as={NavLink} to="/pricing">
               Pricing
             </Nav.Link>
-            <Nav.Link style={{color: "white"}} as={NavLink} to="/feedback">
+            <Nav.Link style={{ color: "white" }} as={NavLink} to="/feedback">
               Feedback
             </Nav.Link>
-            <Nav.Link style={{color: "white"}} as={NavLink} to="/faq">
+            <Nav.Link style={{ color: "white" }} as={NavLink} to="/faq">
               FAQ
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-    
+      </Container>
+    </Navbar>
   );
 };
