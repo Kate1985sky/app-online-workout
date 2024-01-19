@@ -28,7 +28,7 @@ export const HowToStart = () => {
         <Col xs={12}>
           <h1 className="mt-5 text-center fw-bold">How to start</h1>
           <br />
-          <p className="text-center">
+          <p className="text-center px-3">
             It’s easy to start training right now without going anywhere, just
             in your room, having without missing important things and coach
             <br />
@@ -37,9 +37,9 @@ export const HowToStart = () => {
         </Col>
       </Row>
       <Container>
-        <Row className="mt-4 flex-md-column">
+        <Row className="mt-4">
           {items.map(({ text, icon: Icon }, index) => (
-            <Col key={index} className="py-3" xs={4} md={12}>
+            <Col key={index} className="py-3" xs={12} lg={4}>
               <div className="d-flex justify-content-start align-items-center lh-1">
                 <div className="mx-2" style={{ width: 40, height: 50 }}>
                   <Icon />

@@ -6,8 +6,8 @@ export const HeroBanner = () => {
   return (
     <div className="w-100 position-relative overflow-hidden" style={{ background: "var(--basic, #7036BA)" }}>
       <Container className={styles.content}>
-        <Row className=".flex-md-column">
-          <Col xs={12} lg={8} xl={6}>
+        <Row>
+          <Col>
             <h1 className="p-2 fw-bold lh-sm" style={{ color: "white" }}>
               Online Workout
               <br />

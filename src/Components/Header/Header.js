@@ -11,7 +11,7 @@ export const Header = () => {
           <Col xs={9} sm={6}>
             <Logo />
           </Col>
-          <Col xs={3} sm={6}>
+          <Col>
             <Navigation />
           </Col>
         </Row>

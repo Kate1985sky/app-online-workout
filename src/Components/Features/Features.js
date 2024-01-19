@@ -5,15 +5,16 @@ export const Features = () => {
   return (
     <Container>
       <Row className="mt-5">
-        <Col>
+        <Col xs={12}>
           <h1 className="mt-5 text-center fw-bold">Features</h1>
         </Col>
       </Row>
 
       <Row className="mt-5 d-flex align-items-end">
         {items.map(({ text1, text2, icon: Icon }, index) => (
-          <Col className="text-center" key={index}>
+          <Col xs={12} lg={4} className="text-center" key={index}>
             <Icon />
+
             <p className="mt-3 fw-bold">{text1}</p>
             <p className="lh-1 text-muted">{text2}</p>
           </Col>
@@ -21,7 +22,7 @@ export const Features = () => {
       </Row>
 
       <Row>
-        <Col className="mt-5 text-center">
+        <Col xs={12} className="mt-5 text-center">
           <button
             className="rounded-5"
             style={{
