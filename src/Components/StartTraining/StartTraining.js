@@ -4,7 +4,7 @@ export const StartTraining = () => {
   return (
     <Container>
       <Row className="mt-5">
-        <Col>
+        <Col xs="12">
           <h1 className="text-center fw-bold mt-5">Start Training</h1>
           <p className="text-center mt-4 fs-6 fw-lighter text-body">
             Leave your phone and we will send you a link to our special chat
@@ -49,9 +49,10 @@ export const StartTraining = () => {
                 </label>
               </div>
             </div>
+            <div className="d-flex justify-content-center">
             <button
               type="submit"
-              className="rounded-5 mt-2 ms-4"
+              className="rounded-5 mt-2"
               style={{
                 backgroundColor: "#00BFB4",
                 color: "white",
@@ -63,6 +64,7 @@ export const StartTraining = () => {
             >
               Start Training
             </button>
+            </div>
           </form>
         </Col>
       </Row>
