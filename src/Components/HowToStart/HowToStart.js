@@ -40,7 +40,7 @@ export const HowToStart = () => {
         <Row className="mt-4">
           {items.map(({ text, icon: Icon }, index) => (
             <Col key={index} className="py-3" xs={12} lg={4}>
-              <div className="d-flex justify-content-start align-items-center lh-1">
+              <div className="d-flex justify-content-start lh-1">
                 <div className="mx-2" style={{ width: 40, height: 50 }}>
                   <Icon />
                 </div>

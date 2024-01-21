@@ -39,16 +39,16 @@ export const Feedback = () => {
         <Col xs="12">
           <h1 className="mt-5 text-center fw-bold">Feedback About Us</h1>
         </Col>
-        <Col xs={12}>
+        <Col xs={12} className="mt-4">
           <Carousel data-bs-theme="dark" indicators={false}>
             {
               items.map((list, index) => (
-                <Carousel.Item key={index}>
+                <Carousel.Item className="mx-5" key={index}>
                   <Container>
                   <Row className="px-5">
                     {
                       list.map(({text, photo: Icon }, listIndex) => (
-                        <Col xs={12} className="d-flex px-2" key={listIndex}>
+                        <Col xs="6" className="d-flex px-2" key={listIndex}>
                           <div>
                             <Icon />
                           </div>
