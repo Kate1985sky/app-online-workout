@@ -10,13 +10,19 @@ export const Features = () => {
         </Col>
       </Row>
 
-      <Row className="mt-5 d-flex align-items-end">
+      <Row className="mt-5 align-items-end">
         {items.map(({ text1, text2, icon: Icon }, index) => (
-          <Col xs={12} lg={4} className="text-center" key={index}>
-            <Icon />
-
-            <p className="mt-3 fw-bold">{text1}</p>
-            <p className="lh-1 text-muted">{text2}</p>
+          <Col xs={12} lg={4} className="p-3" key={index}>
+            <div className="d-inline-flex flex-lg-column d-flex align-items-center">
+              <div className="flex-shrink-0">
+                <Icon />
+              </div>
+              <div className="px-3 py-2 flex-grow-1 text-center">
+                <span className="mt-3 fw-bold">{text1}</span>
+                <br />
+                <span className="lh-1 text-muted">{text2}</span>
+              </div>
+            </div>
           </Col>
         ))}
       </Row>
