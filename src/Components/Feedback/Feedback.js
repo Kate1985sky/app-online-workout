@@ -15,7 +15,7 @@ const items = [
       icon: RightIcon,
       photo: IconMale,
       text: `The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional. The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional.The most amazing fitness trainings!.`,
-    }
+    },
   ],
   [
     {
@@ -27,44 +27,45 @@ const items = [
       icon: RightIcon,
       photo: IconMale,
       text: `The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional. The most amazing fitness trainings! I’ve became true sportsman with it! Trainer is really professional.The most amazing fitness trainings!.`,
-    }
-  ]
-]
+    },
+  ],
+];
 
 export const Feedback = () => {
-
   return (
     <Container>
       <Row className="mt-5">
         <Col xs="12">
           <h1 className="mt-5 text-center fw-bold">Feedback About Us</h1>
         </Col>
-        <Col xs={12} className="mt-4">
+        <Col xs={12}>
           <Carousel data-bs-theme="dark" indicators={false}>
-            {
-              items.map((list, index) => (
-                <Carousel.Item className="mx-5" key={index}>
-                  <Container>
+            {items.map((list, index) => (
+              <Carousel.Item key={index}>
+                <Container>
                   <Row className="px-5">
-                    {
-                      list.map(({text, photo: Icon }, listIndex) => (
-                        <Col xs="6" className="d-flex px-2" key={listIndex}>
-                          <div>
+                    {list.map(({ text, photo: Icon }, listIndex) => (
+                      <Col
+                        xs={12}
+                        lg={6}
+                        className="mt-5 px-3"
+                        key={listIndex}
+                      >
+                        <div className="d-flex">
+                          <div className="px-4">
                             <Icon />
                           </div>
                           <p>{text}</p>
-                        </Col>
-                      ))
-                    }
+                        </div>
+                      </Col>
+                    ))}
                   </Row>
-                  </Container>
-                </Carousel.Item>
-              ))
-            }
+                </Container>
+              </Carousel.Item>
+            ))}
           </Carousel>
         </Col>
       </Row>
-      </Container>
-    
+    </Container>
   );
 };

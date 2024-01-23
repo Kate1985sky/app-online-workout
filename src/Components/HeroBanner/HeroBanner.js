@@ -1,10 +1,12 @@
-import {Col, Container, Row} from "react-bootstrap";
-import styles from "./HeroBanner.module.css"
+import { Col, Container, Row } from "react-bootstrap";
+import styles from "./HeroBanner.module.css";
 
 export const HeroBanner = () => {
-
   return (
-    <div className="w-100 position-relative overflow-hidden" style={{ background: "var(--basic, #7036BA)" }}>
+    <div
+      className="w-100 position-relative overflow-hidden flex-md-column"
+      style={{ background: "var(--basic, #7036BA)" }}
+    >
       <Container className={styles.content}>
         <Row>
           <Col>
@@ -36,12 +38,12 @@ export const HeroBanner = () => {
       </Container>
 
       <Container fluid className={styles.bg}>
-        <Row  className={styles.wrapper}>
-          <Col xs={{span: 6, offset: 6}}>
+        <Row className={styles.wrapper}>
+          <Col xs={{ span: 6, offset: 6 }}>
             <div className={styles.heroImage} />
           </Col>
         </Row>
       </Container>
     </div>
-  )
-}
+  );
+};
