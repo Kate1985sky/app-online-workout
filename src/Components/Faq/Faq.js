@@ -1,5 +1,6 @@
 import { Container, Row, Col, Accordion } from "react-bootstrap";
 import { faqItems } from "./Faq.data";
+import styles from "./Faq.module.css";
 
 export const Faq = () => {
   return (
@@ -8,14 +9,14 @@ export const Faq = () => {
       style={{ backgroundColor: "#7036BA", height: 500, color: "white" }}
     >
       <Row>
-        <Col>
+        <Col xs={12}>
           <h1 className="mt-5 text-center fw-bold">FAQ</h1>
         </Col>
       </Row>
       <Container>
-        <Row className="mt-5 w-50">
+        <Row className="mt-5 w-75">
         <Col>
-            <Accordion defaultActiveKey="0">
+            <Accordion className={styles.bodyColor} defaultActiveKey="0">
               {
                 faqItems.map(({title, body}, index) => (
                   <Accordion.Item  eventKey={index} key={index}>
