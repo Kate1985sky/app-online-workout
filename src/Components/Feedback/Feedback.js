@@ -32,7 +32,6 @@ const items = [
 ];
 
 export const Feedback = () => {
-
   return (
     <Container>
       <Row className="mt-5">
@@ -41,31 +40,32 @@ export const Feedback = () => {
         </Col>
         <Col xs={12}>
           <Carousel data-bs-theme="dark" indicators={false}>
-            {
-              items.map((list, index) => (
-                <Carousel.Item key={index}>
-                  <Container>
+            {items.map((list, index) => (
+              <Carousel.Item key={index}>
+                <Container>
                   <Row className="px-5">
-                    {
-                      list.map(({text, photo: Icon }, listIndex) => (
-                        <Col xs={12} className="d-flex px-2" key={listIndex}>
-                          <div>
+                    {list.map(({ text, photo: Icon }, listIndex) => (
+                      <Col
+                        xs={12}
+                        lg={6}
+                        className="mt-5 px-3"
+                        key={listIndex}
+                      >
+                        <div className="d-flex">
+                          <div className="px-4">
                             <Icon />
                           </div>
                           <p>{text}</p>
-                        </Col>
-                      ))
-                    }
+                        </div>
+                      </Col>
+                    ))}
                   </Row>
-                  </Container>
-                </Carousel.Item>
-              ))
-            }
+                </Container>
+              </Carousel.Item>
+            ))}
           </Carousel>
         </Col>
       </Row>
-      </Container>
-    
+    </Container>
   );
 };
-
