@@ -6,7 +6,7 @@ export const Faq = () => {
   return (
     <div
       className="mt-5"
-      style={{ backgroundColor: "#7036BA", height: 500, color: "white" }}
+      style={{ backgroundColor: "#7036BA", minHeight: 400, color: "white" }}
     >
       <Row>
         <Col xs={12}>
