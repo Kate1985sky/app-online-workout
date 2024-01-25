@@ -1,5 +1,12 @@
 .bodyColor {
-    --bs-accordion-btn-bg: #7036BA;
-    --bs-accordion-bg: #7036BA;
-    --bs-accordion-color: white;
+  --bs-accordion-btn-bg: #7036ba;
+  --bs-accordion-bg: #7036ba;
+  --bs-accordion-active-bg: #7036ba;
+  --bs-accordion-active-color: none;
+  --bs-accordion-color: white;
+  --bs-accordion-border-color: none;
+  --bs-accordion-btn-color: white;
+  --bs-accordion-icon-active-color: white;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-focus-border-color: white;
 }

@@ -14,54 +14,26 @@ export const Pricing = () => {
       </Row>
       <Container>
         <Row className="mt-5 row justify-content-center">
-          {items.map(
-            (
-              {
-                list1,
-                list2,
-                list3,
-                list4,
-                list5,
-                list6,
-                title,
-                button,
-                icon: Icon,
-              },
-              index
-            ) => (
-              <Col
-                xs={8}
-                lg={3}
-                style={{ backgroundColor: "#A76BF2" }}
-                className="my-2 mx-3 rounded-2"
-                key={index}
-              >
-                <div className="d-flex align-items-start flex-column">
-                  <div>
-                    <p className="fs-3 fw-bold">{title}</p>
-
-                    <p className="lh-1 mt-3 m-0 px-3 text-muted fs-6">
-                      {list1}
-                    </p>
-
-                    <p className="lh-1 px-3 m-0 text-muted fs-6">{list2}</p>
-
-                    <p className="lh-1 px-3 m-0 text-muted fs-6">{list3}</p>
-
-                    <p className="lh-1 px-3 m-0 text-muted">{list4}</p>
-
-                    <p className="lh-1 px-3 m-0 text-muted fs-6">{list5}</p>
-
-                    <p className="lh-1 px-3 m-0 text-muted fs-6">{list6}</p>
-                  </div>
-                  <div className="mt-auto">
-                    <Icon />
-                    <p className="my-2">{button}</p>
-                  </div>
+          {items.map(({ title, conditions, button, icon: Icon }, index) => (
+            <Col
+              xs={8}
+              lg={3}
+              style={{ backgroundColor: "#A76BF2" }}
+              className="my-2 mx-3 rounded-2"
+              key={index}
+            >
+              <div className="d-flex align-items-start flex-column h-100">
+                <div className="mb-4">
+                  <p className="fs-3 fw-bold">{title}</p>
+                  <p className="lh-1 mt-3 m-0 px-3 fs-6">{conditions}</p>
                 </div>
-              </Col>
-            )
-          )}
+                <div className="mt-auto">
+                  <Icon />
+                  <p className="my-2">{button}</p>
+                </div>
+              </div>
+            </Col>
+          ))}
         </Row>
       </Container>
     </div>
