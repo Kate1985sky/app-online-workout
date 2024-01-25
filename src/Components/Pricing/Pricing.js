@@ -30,13 +30,13 @@ export const Pricing = () => {
               index
             ) => (
               <Col
-                xs={12}
+                xs={8}
                 lg={3}
                 style={{ backgroundColor: "#A76BF2" }}
                 className="my-2 mx-3 rounded-2"
                 key={index}
               >
-                <div className="mb-3 d-flex align-items-start flex-column">
+                <div className="d-flex align-items-start flex-column">
                   <div>
                     <p className="fs-3 fw-bold">{title}</p>
 

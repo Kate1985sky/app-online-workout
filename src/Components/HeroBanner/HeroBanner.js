@@ -4,7 +4,7 @@ import styles from "./HeroBanner.module.css";
 export const HeroBanner = () => {
   return (
     <div
-      className="w-100 position-relative overflow-hidden flex-md-column"
+      className="w-100 position-relative overflow-hidden"
       style={{ background: "var(--basic, #7036BA)" }}
     >
       <Container className={styles.content}>
