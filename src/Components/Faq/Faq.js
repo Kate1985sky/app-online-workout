@@ -20,8 +20,8 @@ export const Faq = () => {
               {
                 faqItems.map(({title, body}, index) => (
                   <Accordion.Item  eventKey={index} key={index}>
-                    <Accordion.Header>{title}</Accordion.Header>
-                    <Accordion.Body dangerouslySetInnerHTML={{ __html: body }} />
+                    <Accordion.Header className="fw-bold">{title}</Accordion.Header>
+                    <Accordion.Body className="lh-1 p-0 px-4 fw-light" dangerouslySetInnerHTML={{ __html: body }} />
                   </Accordion.Item>
                 ))
               }

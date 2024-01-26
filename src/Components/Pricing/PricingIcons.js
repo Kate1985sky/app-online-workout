@@ -6,9 +6,11 @@ export const items = [
   {
     title: "Start",
     icon: Price5,
-    list1: "Program for 8 workouts",
-    list2: "3 calls with the trainer",
-    list3: "Video instructions",
+    conditions : [
+      "Program for 8 workouts",
+      "3 calls with the trainer",
+      "Video instructions",
+    ], 
     button: (
       <button
         className="rounded-5"
@@ -28,11 +30,13 @@ export const items = [
   {
     title: "Middle",
     icon: Price14,
-    list1: "Program for 18 workouts",
-    list2: "5 calls with the trainer",
-    list3: "Video instructions",
-    list4: "Text instructions",
-    list5: "1 technique analysis",
+    conditions: [
+      "Program for 18 workouts",
+      "5 calls with the trainer",
+      "Video instructions",
+      "Text instructions",
+      "1 technique analysis",
+    ], 
     button: (
       <button
         className="rounded-5"
@@ -52,12 +56,14 @@ export const items = [
   {
     title: "Pro",
     icon: Price20,
-    list1: "Program for 40 workouts",
-    list2: "15 calls with the trainer",
-    list3: "Video instructions",
-    list4: "Text instructions",
-    list5: "5 technique analysis",
-    list6: "Acces to chat with other sportsmen",
+    conditions: [
+      "Program for 40 workouts",
+      "15 calls with the trainer",
+      "Video instructions",
+      "Text instructions",
+      "5 technique analysis",
+      "Acces to chat with other sportsmen",
+    ], 
     button: (
       <button
         className="rounded-5"
