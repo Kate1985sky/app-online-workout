@@ -1,10 +1,12 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import styles from "./Logo.module.css"
 
 export const Logo = () => {
   return (
-    <Navbar.Brand as={NavLink} to="/">
+    <Navbar.Brand as={NavLink} to="/" className={styles.logo}>
+
       <svg
         width="30"
         height="30"
