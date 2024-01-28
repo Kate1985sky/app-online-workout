@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/app-online-workout/static/css/main.46da4682.css",
+    "main.js": "/app-online-workout/static/js/main.765fd370.js",
+    "static/media/image-header.png": "/app-online-workout/static/media/image-header.e28b81cae696fb80f37a.png",
+    "static/media/female.svg": "/app-online-workout/static/media/female.35979889831d537678903f78ca650ce6.svg",
+    "static/media/male.svg": "/app-online-workout/static/media/male.2f08d1f397af73180507e4db31d962b8.svg",
+    "static/media/tablet.svg": "/app-online-workout/static/media/tablet.2b168ebcc4351d32fb393e00f3c424fe.svg",
+    "static/media/20doll.svg": "/app-online-workout/static/media/20doll.08472e6a6593bed346bfaaf3387d4ec3.svg",
+    "static/media/gift.svg": "/app-online-workout/static/media/gift.2d295cec4b80765c2bc2fa950c604422.svg",
+    "static/media/laptop.svg": "/app-online-workout/static/media/laptop.13185c3506964791ebfd048c0c6c6564.svg",
+    "static/media/5doll.svg": "/app-online-workout/static/media/5doll.a0b81992e3d23d2698416a655fc13f0c.svg",
+    "static/media/14doll.svg": "/app-online-workout/static/media/14doll.7a4cc9e7f8d4181365fbdd5015bd34cb.svg",
+    "static/media/three.svg": "/app-online-workout/static/media/three.b0292e4a9185b885a04cc9153f33f685.svg",
+    "static/media/two.svg": "/app-online-workout/static/media/two.55621a6b08b8d05f9aef5e12c23b3d3f.svg",
+    "index.html": "/app-online-workout/index.html",
+    "static/media/one.svg": "/app-online-workout/static/media/one.b8b5849b7b5c8d4a77e1011ff1d5bc6c.svg",
+    "static/media/icon-left.svg": "/app-online-workout/static/media/icon-left.850c782c9961cb825597aa4be5196dc1.svg",
+    "static/media/icon-right.svg": "/app-online-workout/static/media/icon-right.15ec51d8cfd9aaa1b405162cfd6ef2cb.svg",
+    "main.46da4682.css.map": "/app-online-workout/static/css/main.46da4682.css.map",
+    "main.765fd370.js.map": "/app-online-workout/static/js/main.765fd370.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46da4682.css",
+    "static/js/main.765fd370.js"
+  ]
+}
