@@ -23,3 +23,10 @@
         background-color: var(--basic, #7036BA);
     }
 }
+
+@media screen and (max-width: 580.98px) {
+    .wrapper {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

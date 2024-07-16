@@ -9,7 +9,7 @@ export  const Navigation = () => {
 
   return (
     <Navbar expand="xl">
-      <Container>
+      <Container className={styles.wrapper}>
           <Logo />
           <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.toggle} />
           <Navbar.Collapse id="basic-navbar-nav">
