@@ -12,7 +12,7 @@ export  const Navigation = () => {
       <Container className={styles.wrapper}>
           <Logo />
           <Navbar.Toggle aria-controls="basic-navbar-nav" className={styles.toggle} />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className={styles.navbarCollapse}>
             <Nav className={styles.nav}>
               <Nav.Link className="text-white pe-3" as={NavLink} to="/about-us">
                 About us

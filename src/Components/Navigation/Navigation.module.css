@@ -1,32 +1,37 @@
 .navbar-toggler-icon-bg {
-    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%151, 138, 71, 0.75%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%151, 138, 71, 0.75%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
 }
 .navbar-light .navbar-toggler {
-    border: 1px solid white;
+  border: 1px solid white;
 }
 
 .toggle {
-    margin-right: -15px;
-    border: none;
-    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%28255,255, 255, 0.75%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e")
+  margin-right: -15px;
+  border: none;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%28255,255, 255, 0.75%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
 }
 
 .toggle:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
-
 @media screen and (max-width: 767.98px) {
-    .nav {
-        box-shadow: -7px 24px 25px rgba(0,0,0, 0.3);
-        text-align: right;
-        background-color: var(--basic, #7036BA);
-    }
+  .nav {
+    box-shadow: -7px 24px 25px rgba(0, 0, 0, 0.3);
+    text-align: right;
+    background-color: var(--basic, #7036ba);
+  }
+}
+
+@media screen and (max-width: 1967.98px) {
+  .nav {
+    text-align: right;
+  }
 }
 
 @media screen and (max-width: 580.98px) {
-    .wrapper {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
+  .wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
